@@ -11,6 +11,6 @@ jobs:
           tinytex:true
       - run:pip install ipykernel mbclient matplotlib PyMPDATA
       - run: quarto render 1.ipynb --to pdf --execute
-      - uses: actions/upload-artifact@v7
+      - uses: actions/upload_artifact@v7
         with:
           path: 1.pdf
