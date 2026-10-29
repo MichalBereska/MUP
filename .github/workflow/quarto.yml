@@ -1,4 +1,3 @@
-.github/workflows/quarto.yml
 name:mup
 on:push
 jobs:
