@@ -1,4 +1,4 @@
-.github/workflow/quarto.yml
+.github/workflows/quarto.yml
 name:mup
 on:push
 jobs:
