@@ -8,7 +8,7 @@ jobs:
       - uses:actions/checkout@v7
       - uses:quarto-dev/quarto-actions/setup@v2
         with:
-          tinytex:true
+          tinytex: true
       - run:pip install ipykernel mbclient matplotlib PyMPDATA
       - run: quarto render 1.ipynb --to pdf --execute
       - uses: actions/upload_artifact@v7
