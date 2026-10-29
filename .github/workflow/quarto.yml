@@ -1,0 +1,16 @@
+.github/workflow/quarto.yml
+name:mup
+on:push
+jobs:
+  lab1:
+    runs-on:ubuntu-latest
+    steps:
+      - uses:actions/checkout@v7
+      - uses:quarto-dev/quarto-actions/setup@v2
+        with:
+          tinytex:true
+      - run:pip install ipykernel mbclient matplotlib PyMPDATA
+      - run: quarto render 1.ipynb --to pdf --execute
+      - uses: actions/upload-artifact@v7
+        with:
+          path: 1.pdf
