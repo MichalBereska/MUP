@@ -1,5 +1,5 @@
-name:mup
-on:push
+name: mup
+on: push
 jobs:
   lab1:
     runs-on: ubuntu-latest
